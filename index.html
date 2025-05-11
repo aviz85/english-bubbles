@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Bubbles</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="score">Score: <span id="score-value">0</span></div>
+        <div id="lives">Lives: <span id="lives-value">3</span></div>
+        <div id="bubble-container"></div>
+        <div id="cannon-container">
+            <div id="cannon"></div>
+        </div>
+        <div id="speech-debug">
+            <h3>Speech Debug</h3>
+            <div id="recognized-words">Waiting for speech...</div>
+            <div id="last-word">Last word: <span id="last-word-value">None</span></div>
+        </div>
+        <div id="start-screen">
+            <h1>English Bubbles</h1>
+            <p>Say the words on the bubbles to shoot them!</p>
+            <button id="start-button">Start Game</button>
+            <div class="debug-instructions">
+                <h3>Debug Controls:</h3>
+                <ul>
+                    <li>Ctrl+D: Toggle debug panel</li>
+                    <li>Ctrl+R: Restart speech recognition</li>
+                    <li>Ctrl+M: Test word matching</li>
+                    <li>Space: Pause/resume game</li>
+                    <li>Click bubble to pop it manually</li>
+                </ul>
+            </div>
+        </div>
+        <div id="game-over-screen" class="hidden">
+            <h1>Game Over</h1>
+            <p>Your score: <span id="final-score">0</span></p>
+            <button id="restart-button">Play Again</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
