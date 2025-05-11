@@ -5,7 +5,7 @@ const config = {
     maxBubbles: 5,          // הפחתת מספר הבועות המקסימלי (היה 8)
     initialLives: 3,        // Number of lives player starts with
     arrowSpeed: 10,         // Speed of the arrows
-    debugMode: true,        // Enable debug features
+    debugMode: false,        // Enable debug features
     fuzzyMatching: true,    // Enable fuzzy matching for word recognition
     superDebugMode: true,   // Enable super verbose logging
     words: [                // מילים קלות לזיהוי
